@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>Maze Generator</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.0/js.cookie.min.js"></script>
+    <script src="union-find.js"></script>
+    <script src="random.js"></script>
+    <script src="listeners.js"></script>
+    <script src="canvasUtil.js"></script>
+    <script src="pointer.js"></script>
+    <script src="generate.js"></script>
+    <script src="app.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name="config">
+    <a id="show" class="btn">Open Maze Configuration</a>
+    <fieldset class="optional">
+        <legend>Maze Configuration <a id="hide" class="btn">hide</a></legend>
+        <fieldset id="size">
+            <legend>Size</legend>
+            <label for="size"></label><input type="range" name="size" min="4" value="10" max="40" step="2"/>
+        </fieldset>
+        <fieldset id="time">
+            <legend>Total Animation Time</legend>
+            <label for="time"></label><input type="range" name="time" min="0" value="5" max="60" step="5"/>
+        </fieldset>
+        <a id="redraw" class="btn" href="#">Redraw</a>
+        <a id="ginst" class="btn" href="#">Game Inst</a>
+        <a id="volume" class="btn"><img></a>
+        <a id="print" class="btn">Get PNG</a>
+    </fieldset>
+</form>
+<canvas id="c"></canvas>
+<div id="instructions" class="mid">
+    You start at top left.<br/>
+    Quick click to create edge.<br/>
+    Hold click to remove the last edges.<br/>
+</div>
+<div id="win" class="mid"><img src="win.gif"/>
+    <div id="winText">YOU WON~!</div>
+    <div id="playText">play again?</div>
+</div>
+<div id="credit"><a href="https://github.com/Soluf">By Soluf - Dean Stephansky</a></div>
+<!-- Google Analytics-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72195495-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- Google Analytics End-->
+</body>
+</html>

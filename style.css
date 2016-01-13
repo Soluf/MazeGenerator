@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    overflow: hidden;
+    background: black;
+    color: white;
+}
+
+form {
+    z-index: 5;
+    width: 250px;
+    position: absolute;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    top: 20px;
+    right: 18px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal 16px/normal "Times New Roman", Times, serif;
+    color: white;
+}
+
+#c {
+    margin-top: 10px;
+}
+input[type='range'] {
+    cursor: pointer;
+    width: 157px;
+    padding-right: -20px;
+    margin-left: 25px;
+}
+
+label[for] {
+    position: fixed;
+}
+
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#win {
+    display: none;
+    margin-top: -95px;
+    margin-left: -160px;
+    width: 320px;
+    height: 190px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+#win div {
+    position: inherit;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000,
+    1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+}
+
+
+#winText {
+    left: 85px;
+    top: 10px;
+}
+
+#playText {
+    right: 20px;
+    bottom: 10px;
+    font-size: x-small;
+}
+
+
+#instructions {
+    display: none;
+    margin-top: -38px;
+    margin-left: -250px;
+    width: 500px;
+    height: 76px;
+    font-size: large;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 6;
+}
+
+.btn {
+    font-size: small;
+    cursor: pointer;
+    color: orange;
+}
+
+legend {
+    color: white;
+}
+[name='config'] > fieldset > a {
+    margin: 3px 10px -6px 0;
+}
+
+#redraw, #ginst {
+    float: left;
+}
+
+#volume img {
+    height: 15px;
+    width: 15px;
+    margin-right: -5px;
+}
+
+#show {
+    position: absolute;
+    display: none;
+    top: -18px;
+    right: 0;
+}
+
+.firstRun {
+    border: dashed 2px lawngreen;
+}
+#print, #volume {
+    float: right;
+}
+
+#credit {
+    position: absolute;
+    font-size: x-small;
+    left: 10px;
+    bottom: 15px;
+    z-index: 5;
+}
+
+#credit a {
+    color: orange;
+    text-decoration: none;
+}
